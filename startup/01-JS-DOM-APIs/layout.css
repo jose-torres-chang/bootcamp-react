@@ -2,6 +2,14 @@
   width: 100%;
   height: 100%;
 }
+.only-item {
+  box-sizing: border-box;
+  float: none;
+}
+.hidden-element{
+  visibility: hidden;
+}
+/*Section region*/
 section {
   width: 100%;
   box-sizing: content-box;
@@ -12,14 +20,24 @@ section {
   display: block;
   margin-right: 5%;
 }
-.hidden-element{
-  visibility: hidden;
-}
 .jokes-section {
   border: 1px solid #000;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   height: 25%;
 }
+.failed-request {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+.failed-request:hover {
+  background-color: #fff;
+  color: #f00;
+}
+/*Section region*/
+
+/*Button region*/
 input[type="button"] {
   max-width: 35%;
   background-color: #ffffff;
@@ -37,20 +55,9 @@ input[type="button"]:hover {
   background-color: #0000ff;
   box-shadow: 4px 2px 1px #000;
 }
-.only-item {
-  box-sizing: border-box;
-  float: none;
-}
-.failed-request {
-  background-color: red;
-  color: white;
-  border: 1px solid red;
-  border-radius: 3px;
-}
-.failed-request:hover {
-  background-color: #fff;
-  color: #f00;
-}
+/*Button region*/
+
+/*Sidebar region*/
 div[id*="side-bar"] {
   float:left;
   max-width: 40%;
@@ -71,3 +78,7 @@ div[id*="side-bar"] {
   padding-right: 10%;
   display: block;
 }
+div[id*="-bar"] input[id*="-bar"] {
+  width: 90%;
+}
+/*Sidebar region*/
