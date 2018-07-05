@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta charset="utf-8">
+      <style>
+        form div {
+          float: none;
+          width: 100%;
+          margin-bottom: 5%;
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sign Up</h1>
+    </header>
+    <form action="#">
+      <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="" required>
+      </div>
+      <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastName" id="" required>
+      </div>
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="" required>
+      </div>
+      <div>
+        <label for="birthday">Select your birthday</label>
+        <input type="date" name="birthday" id="" required>
+      </div>
+      <div>
+        <label for="favorite-sport">Select your favorite sport</label>
+        <select name="favorite-sport" id="" selected-index="0" required>
+          <option value=""></option>
+          <option value="">Basketball</option>
+          <option value="">Soccer</option>
+          <option value="">Swimming</option>
+          <option value="">Baseball</option>
+          <option value="">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="bio" required>Description:</label>
+        <textarea placeholder="Please write a little about you..." name="bio" id=""></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </body>
+</html>
